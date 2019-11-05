@@ -1,0 +1,24 @@
+.detail{
+  display: flex;
+  flex-direction: row;;
+}
+app-pokemon-list{
+  width: 75%;
+  height: 100%;
+}
+app-pokemon-detail{
+  width: 25%;
+}
+button{
+  font-size: 2rem;
+  font-family: sans-serif;
+  background-color: rgb(241, 240, 138);
+  color: teal;
+  border-radius: 30px;
+  margin-left: 35vw;
+  margin-top: 30px;
+  margin-bottom: 140px;
+}
+.style{
+  background-color: rgb(162, 212, 212)
+}

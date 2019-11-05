@@ -5,8 +5,9 @@ import { CreatePokemonPageComponent } from './pages/create-pokemon-page/create-p
 
 
 const routes: Routes = [
-  { path: '/', component: PokedexPageComponent},
-  { path: '/create', component: CreatePokemonPageComponent}
+  { path: '', pathMatch: 'full', redirectTo: 'Pokedex'},
+  { path: 'Pokedex', component: PokedexPageComponent},
+  { path: 'create', component: CreatePokemonPageComponent}
 ];
 
 @NgModule({

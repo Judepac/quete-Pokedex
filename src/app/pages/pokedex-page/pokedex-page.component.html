@@ -1,1 +1,12 @@
-<p>pokedex-page works!</p>
+<div class="style">
+  <div class="detail">
+    <app-pokemon-list [pokemons]="arrayPokemon" (pokemonSelected)="pokemonDetail($event)"></app-pokemon-list>
+
+    <app-pokemon-detail *ngIf="pokemonClick" [pokemon]="pokemonClick"></app-pokemon-detail>
+  </div>
+
+  <div class="button">
+    <button routerLink="/create">Créer un nouveau Pokemon</button>
+  </div>
+
+</div>

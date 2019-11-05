@@ -1,0 +1,31 @@
+
+.poke{
+  border: 2px solid whitesmoke;
+  border-radius: 30px;
+  width: 25%;
+  height: 300px;
+  margin-top: 20px;
+}
+img{
+  height: 225px;
+  padding-left: 20px;
+}
+.pokemons{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+p{
+  text-align: center;
+  color: white;
+  font-family: fantasy;
+  font-size: 2rem;
+  margin: 0;
+  padding-top: 10px;
+  text-decoration: underline;
+}
+.poke:hover{
+  background-color: rgb(241, 240, 138);
+  color: black;
+}

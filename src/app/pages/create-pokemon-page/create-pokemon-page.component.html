@@ -1,1 +1,32 @@
-<p>create-pokemon-page works!</p>
+<div class="container">
+<h2>Créer votre Pokemon</h2>
+
+<form (submit)="myForm.valid && addNewPokemon()" #myForm="ngForm">
+  <div>
+    <label for="pokemonName">Nom:</label>
+    <input type="text"[(ngModel)]="newPokemon.name" name="pokemonName" required #nameRef="ngModel" >
+
+    <div *ngIf="nameRef.errors && myForm.submitted">Merci de renseigner un nom pour votre pokémon</div>
+  </div>
+
+  <div>
+    <label for="imageUrl">Image:</label>
+    <input type="text" [(ngModel)]="newPokemon.url" name="imageUrl" required  #imageUrlRef="ngModel">
+
+    <div *ngIf="imageUrlRef.errors && myForm.submitted">Url de l'image</div>
+  </div>
+
+  <div>
+    <label for="description">Description:</label>
+    <input type="text" [(ngModel)]="newPokemon.description" name="description"  #descriptionRef="ngModel">
+
+    <div *ngIf = "myForm.submitted && myForm.valid">Nouveau Pokemon crée</div>
+  </div>
+
+  <button class="soumis">Nouveau Pokemon</button>
+  <button class="pokedex" routerLink='/Pokedex' routerLinkActive="router-link-active" >Retour Pokédex</button>
+
+  </form>
+
+
+</div>
